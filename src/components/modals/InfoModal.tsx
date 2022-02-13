@@ -8,43 +8,45 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="怎然耍zo3 ni5 seng2" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        你有六次机会来猜出一个<a href="https://baike.baidu.com/item/%E6%BD%AE%E5%B7%9E%E8%AF%9D%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88/2344643" target="_blank"><b><ins>潮州话拼音</ins></b></a>。答案可能是单字或词语。当输入一个正确的拼写之后，方格会显示为下列三种颜色之一，来提示答案。请使用<b>汕头音</b>作答。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" status="correct" />
-        <Cell value="E" />
+        <Cell value="C" status="correct" />
         <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
-      </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
-      </p>
-
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
-        <Cell value="L" status="present" />
         <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="G" />
+        <Cell value="U" />
+        <Cell value="Ê" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        答案中含有字母C，且位置正确。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
+        <Cell value="B" />
+        <Cell value="Ê" />
+        <Cell value="N" status="present" />
         <Cell value="G" />
-        <Cell value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="S" />
+        <Cell value="I" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        答案中含有字母N，但位置错误。
+      </p>
+
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell value="S" />
+        <Cell value="I" />
+        <Cell value="B" />
+        <Cell value="S" status="absent" />
+        <Cell value="O" />
+        <Cell value="G" />
+      </div>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        答案中不含字母S。
       </p>
     </BaseModal>
   )

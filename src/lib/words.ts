@@ -1,6 +1,8 @@
 import { WORDS } from '../constants/wordlist'
 import { VALID_GUESSES } from '../constants/validGuesses'
 import { getGuessStatuses } from './statuses'
+import { CHINESE } from '../constants/chinese'
+import { WORD_WITH_TONE } from '../constants/wordlistWithTone'
 
 export const isWordInWordList = (word: string) => {
   return (
@@ -55,3 +57,13 @@ export const getWordOfDay = () => {
 }
 
 export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+
+export const getChinese = (word: string) => {
+  const idx = WORDS.indexOf(word.toLowerCase())
+  return CHINESE[idx]
+}
+
+export const getPinyin = (word: string) => {
+  const idx = WORDS.indexOf(word.toLowerCase())
+  return WORD_WITH_TONE[idx]
+}

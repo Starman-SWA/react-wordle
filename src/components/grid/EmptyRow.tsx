@@ -9,6 +9,7 @@ export const EmptyRow = () => {
       {emptyCells.map((_, i) => (
         <Cell key={i} />
       ))}
+      <p className="w-20"></p>
     </div>
   )
 }

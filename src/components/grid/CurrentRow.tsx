@@ -17,6 +17,7 @@ export const CurrentRow = ({ guess }: Props) => {
       {emptyCells.map((_, i) => (
         <Cell key={i} />
       ))}
+      <p className="w-20"></p>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { MAX_CHALLENGES } from '../../constants/settings'
+import { Chinese } from './Chinese'
 import { CompletedRow } from './CompletedRow'
 import { CurrentRow } from './CurrentRow'
 import { EmptyRow } from './EmptyRow'
