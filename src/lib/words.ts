@@ -67,3 +67,5 @@ export const getPinyin = (word: string) => {
   const idx = WORDS.indexOf(word.toLowerCase())
   return WORD_WITH_TONE[idx]
 }
+
+export const solutionChinese = getChinese(solution)

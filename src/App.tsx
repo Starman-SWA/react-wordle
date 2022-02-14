@@ -32,6 +32,7 @@ import {
   isWinningWord,
   solution,
   findFirstUnusedReveal,
+  solutionChinese,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
@@ -282,7 +283,7 @@ function App() {
       />
       <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
       <Alert
-        message={CORRECT_WORD_MESSAGE(solution)}
+        message={CORRECT_WORD_MESSAGE(solution, solutionChinese)}
         isOpen={isGameLost && !isRevealing}
       />
       <Alert

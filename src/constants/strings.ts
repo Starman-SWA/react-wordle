@@ -5,8 +5,8 @@ export const GAME_COPIED_MESSAGE = '已复制到剪贴板'
 export const ABOUT_GAME_MESSAGE = '关于潮图'
 export const NOT_ENOUGH_LETTERS_MESSAGE = '毋到六个字母'
 export const WORD_NOT_FOUND_MESSAGE = '觅无此个拼音'
-export const CORRECT_WORD_MESSAGE = (solution: string) =>
-  `答案是 ${solution}`
+export const CORRECT_WORD_MESSAGE = (solution: string, solutionChinese: string) =>
+  `答案是 ${solution} ${solutionChinese}`
 export const ENTER_TEXT = '确认'
 export const DELETE_TEXT = '删除'
 export const STATISTICS_TITLE = '统计数据'
@@ -17,4 +17,4 @@ export const TOTAL_TRIES_TEXT = '总尝试次数'
 export const SUCCESS_RATE_TEXT = '成功率'
 export const CURRENT_STREAK_TEXT = '连赢局数'
 export const BEST_STREAK_TEXT = '最长连赢'
-export const GAME_LINK = 'diodou.vercel.app'
+export const GAME_LINK = 'diodou.cf'
