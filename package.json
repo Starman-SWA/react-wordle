@@ -62,5 +62,5 @@
   "lint-staged": {
     "src/*.{ts,tsx,js,jsx,css,md}": "prettier --write"
   },
-  "homepage": "https://starman-swa.github.io/react-wordle"
+  "homepage": "https://diodou.vercel.app"
 }
