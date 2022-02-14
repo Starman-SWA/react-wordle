@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="怎然耍zo3 ni5 seng2" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        你有六次机会来猜出一个<a href="https://baike.baidu.com/item/%E6%BD%AE%E5%B7%9E%E8%AF%9D%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88/2344643" target="_blank"><b><ins>潮州话拼音</ins></b></a>。答案可能是单字或词语。当输入一个正确的拼写之后，方格会显示为下列三种颜色之一，来提示答案。请使用<b>汕头音</b>作答。
+        你有六次机会来猜出一个<a href="https://baike.baidu.com/item/%E6%BD%AE%E5%B7%9E%E8%AF%9D%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88/2344643" target="_blank"  rel="noreferrer"><b><ins>潮州话拼音</ins></b></a>。答案可能是单字或词语。当输入一个正确的拼写之后，方格会显示为下列三种颜色之一，来提示答案。请使用<b>汕头音</b>作答。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
