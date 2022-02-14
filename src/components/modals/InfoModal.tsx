@@ -14,27 +14,27 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="C" status="correct" />
-        <Cell value="A" />
+        <Cell value="L" status="correct" />
         <Cell value="O" />
-        <Cell value="G" />
+        <Cell value="H" />
+        <Cell value="H" />
+        <Cell value="O" />
         <Cell value="U" />
-        <Cell value="Ê" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        答案中含有字母C，且位置正确。
+        答案中含有字母L，且位置正确。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="B" />
+        <Cell value="P" />
+        <Cell value="A" />
+        <Cell value="H" status="present" />
+        <Cell value="D" />
         <Cell value="Ê" />
-        <Cell value="N" status="present" />
         <Cell value="G" />
-        <Cell value="S" />
-        <Cell value="I" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        答案中含有字母N，但位置错误。
+        答案中含有字母H，但位置错误。
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
